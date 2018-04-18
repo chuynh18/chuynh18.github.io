@@ -1,0 +1,85 @@
+/* adding required formatting per spec */
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    background: #777777;
+    width: 960px;
+    font-size: 18px;
+    margin: auto;
+    text-align: center;
+}
+
+header, nav, footer {
+    background: #ebebeb;
+    padding: 40px;
+    margin-top: 10px;
+}
+
+/* Trying overflow: hidden; tip, thanks David */
+div {
+    margin: 20px 0px 20px;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+section {
+    background: #ebebeb;
+    width: 495px;
+    height: 400000px;
+    padding: 10px;
+    float: left;
+}
+
+/* since the div holding the section and aside is purposefully restricted to 350px,
+I figure it's okay to give the aside an excessive length of 400px.  Fingers crossed. */
+
+aside {
+    background: #ebebeb;
+    height: 400px;
+    width: 44.3%;
+    float: right;
+
+}
+
+article {
+    color: #ebebeb;
+    background: #777777;
+    width: 495px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+h1 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    color: #777777;
+    background: #ebebeb;
+    width: 90%;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    color: #777777;
+    background: #ebebeb;
+    width: 90%;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    color: #ebebeb;
+    background: #777777;
+    width: 90%;
+    margin-left: 20px;
+}
