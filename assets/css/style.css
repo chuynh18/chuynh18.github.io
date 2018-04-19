@@ -44,7 +44,7 @@ article {
     border-width: 1px;
     border-color: #bbb;
     width: 960px;
-    margin: 30px auto 0 auto;
+    margin: 30px auto 0;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -192,6 +192,53 @@ textarea {
     border-style: solid;
     border-width: 1px;
     margin-left: 3%;
+}
+
+.contactcontainer {
+    width: 960px;
+    margin: 0 auto 0;
+    position: relative;
+}
+
+.contactform {
+    width: 65%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.contactbuttons {
+    width: 31%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 30px auto 0;
+    /* padding-left: 30px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #bbb;
+}
+
+.contactbuttonstext {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #4aaaa5;
+    font-weight: bold;
+    font-size: 24px;
+    border-bottom-style: solid;
+    border-bottom-color: #ccc;
+    border-bottom-width: 1px;
+    padding-bottom: 3%;
+    text-align: center;
+    width: 80%;
+    margin: 0px auto;
+}
+
+.socialnetworks{
+    text-align: center;
+    margin: 10% 0 5%;
 }
 
 #copyright {
