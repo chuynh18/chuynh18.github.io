@@ -60,6 +60,7 @@ footer {
     padding-bottom: 5px;
     font-size: 12px;
     clear: both;
+    flex-shrink: 0;
 }
 
 .aboutme {
