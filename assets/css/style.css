@@ -153,7 +153,15 @@ a:hover {
     top: 77%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
 
+.portfolioitem:hover .portfolioimage {
+    opacity: 0.6;
+  }
+
+.portfolioitem:hover .portfoliotext {
+    background-color: #35dad1;
+    font-size: 20px;
 }
 
 .portfolioimage {
