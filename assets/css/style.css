@@ -167,15 +167,14 @@ a:hover {
 }
 
 .textbox, textarea {
-    min-width: 98%;
-    max-width: 98%;
+    min-width: 96.5%;
+    max-width: 96.5%;
     border-color: #ccc;
     border-style: solid;
     border-width: 1px;
     padding: 0.5em 0.7em;
     margin-bottom: 2%;
     font-size: 14px;
-    margin-right: 3%;
 }
 
 textarea {
