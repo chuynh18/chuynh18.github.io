@@ -33,7 +33,7 @@ const openModal = function(image) {
     img.src = `assets/img/${image}`;
     img.alt = `assets/img/${image}`;
 
-    modal.style.display = "block";
+    modal.style.display = "table";
 }
 
 document.getElementById("modalClose").onclick = function() {
@@ -41,7 +41,7 @@ document.getElementById("modalClose").onclick = function() {
 }
 
 window.onclick = function(event) {
-    if (event.target == document.getElementById('modal')) {
+    if (event.target == document.getElementById('mid-modal')) {
         modal.style.display = "none";
     }
 } 
