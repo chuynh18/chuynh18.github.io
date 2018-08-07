@@ -7,13 +7,13 @@ window.onload = function() {
     const timeGreeting = document.getElementById("welcome1");
 
     if (hour > 22 || hour < 5) {
-        timeGreeting.textContent = "good night";
+        timeGreeting.textContent = "good night.";
     } else if (hour >= 5 && hour <= 12) {
-        timeGreeting.textContent = "good morning";
+        timeGreeting.textContent = "good morning.";
     } else if (hour > 12 && hour <= 19) {
-        timeGreeting.textContent = "good afternoon";
+        timeGreeting.textContent = "good afternoon.";
     } else if (hour > 19 && hour <= 22) {   
-        timeGreeting.textContent = "good evening";
+        timeGreeting.textContent = "good evening.";
     }
 
     anime.timeline()
