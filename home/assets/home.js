@@ -1,6 +1,39 @@
 "use strict";
 
-const mouseover = function(image, showText) {
+
+window.onload = function() {
+    const tiles = ['yellowbird.jpg', 'geese.jpg', 'redbird.jpg', 'heron.jpg', 'hummingbird.jpg', 'flyheron.jpg'];
+    const gridItems = document.getElementsByClassName("grid-item");
+
+    // welcome "ceremony"
+    setTimeout(function() {
+        mouseover("welcome.png", false, 125);
+    }, 600);   
+    setTimeout(function() {
+        mouseover("tiled.jpg", true, 125);
+    }, 3500);
+    // attach event handlers after ceremony has completed
+    setTimeout(function() {
+        for (let i = 0; i < gridItems.length; i++) {
+            gridItems[i].addEventListener("click", function(){
+                openModal(tiles[i]);
+            });
+            gridItems[i].addEventListener("mouseenter", function(event){
+                mouseover(tiles[i], false);
+                toggleGlow(event, true);
+            });
+            gridItems[i].addEventListener("mouseleave", function(event){
+                mouseover('tiled.jpg', true);
+                toggleGlow(event, false);
+            });
+        }
+    }, 4250);
+}
+
+const mouseover = function(image, showText, delay) {
+    if (!delay) {
+        delay = 70;
+    }
 
     const existingImage = document.getElementsByClassName("image");
     const infoText = document.getElementsByClassName("infotext");
@@ -15,12 +48,11 @@ const mouseover = function(image, showText) {
                 infoText[i].style.display = "none";
             }
 
-        }, 70*i);
+        }, delay*i);
     }
 }
 
 const toggleGlow = function(event, on) {
-    console.log(event.target);
     if (on) {
         event.target.classList.add("glow");
     } else {
@@ -44,4 +76,5 @@ window.onclick = function(event) {
     if (event.target == document.getElementById('mid-modal')) {
         modal.style.display = "none";
     }
-} 
+}
+
