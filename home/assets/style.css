@@ -10,6 +10,9 @@
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto auto;
     grid-gap: 20px;
+    -ms-grid-template-columns: auto auto auto auto;
+    -ms-grid-template-rows: auto auto auto;
+    -ms-grid-gap: 20px;
 }
 
 .grid-item {
@@ -58,6 +61,10 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    -ms-grid-column-start: 1;
+    -ms-grid-column-end: 3;
+    -ms-grid-row-start: 1;
+    -ms-grid-row-end: 2;
     height: 200px;
     width: 518px;
 }
@@ -67,6 +74,10 @@
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 2;
+    -ms-grid-column-start: 3;
+    -ms-grid-column-end: 5;
+    -ms-grid-row-start: 1;
+    -ms-grid-row-end: 2;
     height: 200px;
     width: 495px;
 }
@@ -76,6 +87,10 @@
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 4;
+    -ms-grid-column-start: 1;
+    -ms-grid-column-end: 2;
+    -ms-grid-row-start: 2;
+    -ms-grid-row-end: 4;
     height: 420px;
     width: 347px;
 }
@@ -83,6 +98,8 @@
     background-color: blue;
     grid-column-start: 2;
     grid-column-end: 5;
+    -ms-grid-column-start: 2;
+    -ms-grid-column-end: 5;
     height: 200px;
     width: 666px;
 
@@ -91,6 +108,8 @@
     background-color: red;
     grid-column-start: 2;
     grid-column-end: 4;
+    -ms-grid-column-start: 2;
+    -ms-grid-column-end: 4;
     height: 200px;
     width: 323px;
 }
