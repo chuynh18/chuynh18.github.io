@@ -29,7 +29,7 @@
 
 .grid-item {
     height: 200px;
-    font-size: 72pt;
+    font-size: 18pt;
     color: white;
     overflow: hidden;
 }
@@ -126,6 +126,13 @@
     background-color: grey;
     height: 200px;
     width: 323px;
+}
+
+.infotext {
+    position: relative;
+    bottom: 27pt;
+    padding: 0 10px;
+    background-color: rgba(150, 150, 150, 0.7);
 }
 
 .modal {
