@@ -1,1 +1,4 @@
-This is my first homework assignment.  yay
+About
+=====
+
+Welcome to my real portfolio.  Finally.

@@ -1,0 +1,33 @@
+* {
+    /* make it so browsers don't make my page look ugly with their default styling */
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-color: lightgray;
+    font-size: 20px;
+}
+
+#blockall {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+}
+
+.welcome {
+    font-size: 36pt;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform: translateY(50%);
+    opacity: 0;
+}
