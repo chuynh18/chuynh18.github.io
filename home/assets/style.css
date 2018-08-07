@@ -3,6 +3,17 @@
     padding: 0;
 }
 
+#outsideDiv {
+    display: table;
+    height: 100vh;
+    width: 100%;
+}
+
+#middleDiv {
+    display: table-cell;
+    vertical-align: middle;
+}
+
 #grid-container {
     margin: auto;
     display: grid;
@@ -17,9 +28,6 @@
 
 .grid-item {
     height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 72pt;
     color: white;
     overflow: hidden;

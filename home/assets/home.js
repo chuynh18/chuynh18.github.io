@@ -6,7 +6,7 @@ const mouseover = function(image) {
     
     for (let i = 0; i < existingImage.length; i++) {
         existingImage[i].alt = `assets/img/${image}`;
-        setTimeout(() => existingImage[i].src = `assets/img/${image}`, 60*i);
+        setTimeout(() => existingImage[i].src = `assets/img/${image}`, 70*i);
     }
 }
 
