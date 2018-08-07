@@ -29,7 +29,7 @@ window.onload = function() {
             opacity: [0,1,1,0],
             duration: 3500,
             easing: "linear",
-            offset: '-=2500'
+            offset: '-=2600'
         }) .add({
             targets: '#welcome2',
             translateY: ["42%", "45%"],
