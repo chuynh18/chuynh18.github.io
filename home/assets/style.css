@@ -6,6 +6,7 @@
 #grid-container {
     margin: auto;
     display: grid;
+    width: 1033px;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto auto;
     grid-gap: 20px;
@@ -18,6 +19,37 @@
     justify-content: center;
     font-size: 72pt;
     color: white;
+    overflow: hidden;
+}
+
+.image {
+    object-fit: none;
+    height: 100%;
+    width: 100%;
+}
+
+#img0 {
+    object-position: 0 0;
+}
+
+#img1 {
+    object-position: -538px 0;
+}
+
+#img2 {
+    object-position: 0 -220px;
+}
+
+#img3 {
+    object-position: -367px -220px;
+}
+
+#img4 {
+    object-position: -367px -440px;
+}
+
+#img5 {
+    object-position: -710px -440px;
 }
 
 .gi0 {
