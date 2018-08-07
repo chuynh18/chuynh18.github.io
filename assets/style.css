@@ -31,3 +31,27 @@ body {
     transform: translateY(50%);
     opacity: 0;
 }
+
+@media only screen and (max-width: 979px) {
+    .welcome {
+        font-size: 32pt;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .welcome {
+        font-size: 24pt;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .welcome {
+        font-size: 18pt;
+    }
+}
+
+@media only screen and (max-width: 512px) {
+    .welcome {
+        font-size: 14pt;
+    }
+}
