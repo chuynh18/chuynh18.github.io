@@ -58,6 +58,8 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    height: 200px;
+    width: 518px;
 }
 .gi1 {
     background-color: blue;
@@ -65,6 +67,8 @@
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 2;
+    height: 200px;
+    width: 495px;
 }
 .gi2 {
     background-color: red;
@@ -73,18 +77,25 @@
     grid-row-start: 2;
     grid-row-end: 4;
     height: 420px;
+    width: 347px;
 }
 .gi3 {
     background-color: blue;
     grid-column-start: 2;
     grid-column-end: 5;
+    height: 200px;
+    width: 666px;
 
 }
 .gi4 {
     background-color: red;
     grid-column-start: 2;
     grid-column-end: 4;
+    height: 200px;
+    width: 323px;
 }
 .gi5 {
     background-color: blue;
+    height: 200px;
+    width: 323px;
 }
