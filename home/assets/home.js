@@ -19,6 +19,15 @@ const mouseover = function(image, showText) {
     }
 }
 
+const toggleGlow = function(event, on) {
+    console.log(event.target);
+    if (on) {
+        event.target.classList.add("glow");
+    } else {
+        event.target.classList.remove("glow");
+    }
+}
+
 const openModal = function(image) {
     const img = document.getElementById("modalImage");
     img.src = `assets/img/${image}`;
