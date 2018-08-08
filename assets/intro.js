@@ -19,31 +19,32 @@ window.onload = function() {
     anime.timeline()
         .add({
             targets: '#welcome0',
-            translateY: ["42%", "45%"],
+            translateY: ["30%", "33%"],
             opacity: [0,1,1,0],
-            duration: 3500,
-            easing: "linear"
+            duration: 3000,
+            easing: "linear",
+            offset: 0
         }) .add({
             targets: '#welcome1',
-            translateY: ["52%", "49%"],
+            translateY: ["37%", "40%"],
             opacity: [0,1,1,0],
-            duration: 3500,
+            duration: 3000,
             easing: "linear",
-            offset: '-=2600'
+            offset: 650
         }) .add({
             targets: '#welcome2',
-            translateY: ["42%", "45%"],
+            translateY: ["45%", "48%"],
             opacity: [0,1,1,0],
-            duration: 4500,
+            duration: 3000,
             easing: "linear",
-            offset: '-=1200'
+            offset: 1300
         }) .add({
             targets: '#welcome3',
-            translateY: ["52%", "49%"],
+            translateY: ["53%", "56%"],
             opacity: [0,1,1,0],
-            duration: 4500,
+            duration: 3000,
             easing: "linear",
-            offset: '-=3400',
+            offset: 2050,
             complete: function() {
                 window.location = "./home";
             }
