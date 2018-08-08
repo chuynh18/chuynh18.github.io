@@ -187,3 +187,8 @@
 .preload {
     display: none;
 }
+
+/* make cursor change to pointer to make it obvious this is a clickable element */
+a {
+    cursor: pointer;
+}
