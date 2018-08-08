@@ -9,7 +9,7 @@ window.onload = function() {
     // welcome "ceremony"
     setTimeout(function() {
         mouseover("welcome.jpg", false, 150);
-    }, 1000);   
+    }, 600);   
     setTimeout(function() {
         mouseover("tiled.jpg", true, 125);
     }, 3500);
