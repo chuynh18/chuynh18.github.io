@@ -8,7 +8,7 @@ window.onload = function() {
     // welcome "ceremony"
     setTimeout(function() {
         mouseover("welcome.png", false, 150);
-    }, 800);   
+    }, 1000);   
     setTimeout(function() {
         mouseover("tiled.jpg", true, 125);
     }, 3500);
