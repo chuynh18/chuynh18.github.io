@@ -3,7 +3,8 @@
 
 window.onload = function() {
     const tiles = ['yellowbird.jpg', 'geese.jpg', 'redbird.jpg', 'heron.jpg', 'hummingbird.jpg', 'flyheron.jpg'];
-    const gridItems = document.getElementsByClassName("grid-item");
+    const gridItems = document.getElementsByClassName("mouseover-box");
+    const images = document.getElementsByClassName("image");
 
     // welcome "ceremony"
     setTimeout(function() {
