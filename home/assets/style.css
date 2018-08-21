@@ -8,9 +8,21 @@ html {
     background-color: #eee;
 }
 
+#my-name {
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 36pt;
+    text-align: center;
+    opacity: 0;
+    animation-name: fade-in, translate-down;
+    animation-duration: 750ms;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
 #outsideDiv {
     display: table;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
 }
 
@@ -25,11 +37,11 @@ html {
     width: 1033px;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto auto;
-    /* grid-gap: 20px; */
     -ms-grid-template-columns: auto auto auto auto;
     -ms-grid-template-rows: auto auto auto;
-    /* -ms-grid-gap: 20px; */
     background-clip: padding-box;
+    animation-name: appear;
+    animation-duration: 1s;
 }
 
 .grid-item {
@@ -232,10 +244,27 @@ p {
 
 .fadeIn {
     animation-name: fade-in;
-    animation-duration: 750ms;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+}
+
+.fadeOut {
+    animation-name: fade-out;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes translate-down {
+    0% {bottom: 10px;}
+    100% {bottom: 0px;}
 }
 
 @keyframes fade-in {
-    0% {opacity: 0.1}
-    100% {opacity: 1}
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fade-out {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
 }
