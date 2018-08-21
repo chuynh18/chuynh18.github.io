@@ -40,7 +40,7 @@ html {
     -ms-grid-template-columns: auto auto auto auto;
     -ms-grid-template-rows: auto auto auto;
     background-clip: padding-box;
-    animation-name: appear;
+    animation-name: fade-in;
     animation-duration: 1s;
 }
 
