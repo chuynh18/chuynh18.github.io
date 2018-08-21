@@ -346,6 +346,11 @@ p {
     #description-text {
         font-size: 11pt;
     }
+
+    .icon-link {
+        height: 75px;
+        width: 75px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -361,5 +366,10 @@ p {
 
     #description-text {
         font-size: 10pt;
+    }
+
+    .icon-link {
+        height: 60px;
+        width: 60px;
     }
 }
