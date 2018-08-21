@@ -1,7 +1,7 @@
 "use strict";
 
 window.onload = function() {
-    const tiles = ['yellowbird.jpg', 'geese.jpg', 'redbird.jpg', 'heron.jpg', 'hummingbird.jpg', 'flyheron.jpg'];
+    const tiles = ['hummingbird.jpg', 'four.jpg', 'nys.jpg', 'tic.jpg', 'shiritori.jpg', 'snake.jpg'];
     const gridItems = document.getElementsByClassName("mouseover-box");
     let timer;
 
@@ -10,7 +10,7 @@ window.onload = function() {
         mouseover("welcome.jpg", false, 150);
     }, 600);   
     setTimeout(function() {
-        mouseover("tiled.jpg", true, 125);
+        mouseover("home.jpg", true, 125);
     }, 3500);
     // attach event handlers after ceremony has completed
     setTimeout(function() {
@@ -20,7 +20,7 @@ window.onload = function() {
             });
             gridItems[i].addEventListener("mouseenter", function(event){
                 timer = setTimeout(function() {
-                    mouseover(tiles[i], false, 70);
+                    mouseover(tiles[i], false, 70, i);
                 }, 500);
                 toggleGlow(event, true);
             });
@@ -29,10 +29,10 @@ window.onload = function() {
 
                 if (transitioning) {
                     setTimeout(function() {
-                        mouseover('tiled.jpg', true, 70);
+                        mouseover('home.jpg', true, 70);
                     }, 200)
                 } else if (transitionedToNonDefault) {
-                    mouseover('tiled.jpg', true, 0);
+                    mouseover('home.jpg', true, 0);
                 }
                 
                 toggleGlow(event, false);
@@ -44,7 +44,7 @@ window.onload = function() {
 let transitioning = false;
 let transitionedToNonDefault = false;
 
-const mouseover = function(image, showText, delay) {
+const mouseover = function(image, showText, delay, showLabelNum) {
     const existingImage = document.getElementsByClassName("image");
     const infoText = document.getElementsByClassName("infotext");
     transitioning = true;
@@ -59,15 +59,20 @@ const mouseover = function(image, showText, delay) {
 
             if (showText) {
                 infoText[i].style.display = "";
+                infoText[i].classList.remove("infotextActive");
             } else {
-                infoText[i].style.display = "none";
+                if (showLabelNum !== i) {
+                    infoText[i].style.display = "none";
+                } else {
+                    infoText[i].classList.add("infotextActive");
+                }
             }
 
             existingImage[i].classList.add("fadeIn");
 
             if (i === existingImage.length - 1) {
                 transitioning = false;
-                if (image !== "tiled.jpg") {
+                if (image !== "home.jpg") {
                     transitionedToNonDefault = true;
                 } else {
                     transitionedToNonDefault = false;
@@ -77,7 +82,7 @@ const mouseover = function(image, showText, delay) {
     }
 }
 
-const timer = function() {
+const showName = function(input) {
 
 }
 

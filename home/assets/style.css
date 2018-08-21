@@ -141,6 +141,10 @@
     background-color: rgba(100, 100, 100, 0.7);
 }
 
+.infotextActive {
+    background-color: rgba(184, 113, 113, 0.7)
+}
+
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
