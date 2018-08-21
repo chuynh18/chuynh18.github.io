@@ -16,7 +16,7 @@ html {
     opacity: 0;
     animation-name: fade-in, translate-down;
     animation-duration: 750ms;
-    animation-delay: 4s;
+    animation-delay: 1500ms;
     animation-fill-mode: forwards;
 }
 
@@ -275,6 +275,10 @@ p {
 }
 
 @media only screen and (max-width: 1024px) {
+    #my-name {
+        animation-delay: 200ms;
+    }
+
     #mobile-container {
         display: initial;
         width: 100%;

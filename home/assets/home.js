@@ -14,12 +14,12 @@ window.onload = function() {
     let timer;
 
     // welcome "ceremony"
-    setTimeout(function() {
-        mouseover("welcome.jpg", false, 150);
-    }, 600);   
+    // setTimeout(function() {
+    //     mouseover("welcome.jpg", false, 150);
+    // }, 600);   
     setTimeout(function() {
         mouseover("home.jpg", true, 125);
-    }, 3500);
+    }, 600);
     // attach event handlers after ceremony has completed
     setTimeout(function() {
         for (let i = 0; i < gridItems.length; i++) {
@@ -46,7 +46,7 @@ window.onload = function() {
                 toggleGlow(event, false);
             });
         }
-    }, 4250);
+    }, 1350);
 }
 
 let transitioning = false;
