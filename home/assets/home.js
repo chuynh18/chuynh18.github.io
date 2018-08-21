@@ -9,7 +9,7 @@ window.onload = function() {
         {img: "shiritori.jpg", half: "shiritorismall.jpg", desc: "<p><a href='https://en.wikipedia.org/wiki/Shiritori' target='_blank'>Shiritori<a> is a Japanese children's game.  Players take turns coming up with words; essentially, the following word must start with the same phoneme as as the prior word's ending phoneme.  There are a few other rules, which are handled faithfully.</p><p>My implementation is written in pure HTML, CSS, and JavaScript.  It accepts <a href='https://en.wikipedia.org/wiki/Hiragana' target='_blank'>Hiragana</a> and <a href='https://en.wikipedia.org/wiki/Katakana' target='_blank'>Katakana</a>, and can match across both writing systems.  That is to say, players can play words written in Hiragana with words written in Katakana and vice versa.  I also wrote code to generate <a href='https://en.wikipedia.org/wiki/Romanization_of_Japanese' target='_blank'>Romaji</a> off the user-inputted Hiragana and Katakana.  Hiragana and Katakana digraphs (<a href='https://en.wikipedia.org/wiki/Y%C5%8Don' target='_blank'>Yōon</a>) are handled without issue, along with <a href='https://en.wikipedia.org/wiki/Sokuon' target='_blank'>Sokuon</a> and <a href='https://en.wikipedia.org/wiki/Ch%C5%8Donpu' target='_blank'>Chōonpu</a></p><p class='links-row'><a href='https://chuynh18.github.io/shiritori/' target='_blank'><img src='assets/img/eye.svg' alt='Try it' class='icon-link'></a><a href='https://github.com/chuynh18/shiritori' target='_blank'><img src='assets/img/mark-github.svg' alt='See the code' class='icon-link'></a></p>"},
         {img: "snake.jpg", half: "snakesmall.jpg", desc: "<p>A classic game.  My implementation is written in pure HTML, CSS, and JavaScript.  I wanted to try my hand at writing a simple real-time game in JavaScript, and I'm glad I took on the challenge.  My initial version ran without issues on computers, but had performance issues on mobile devices.  Please see the <a href='https://github.com/chuynh18/snake#optimization' target='_blank'>optimization section of the README.md</a> for a closer look.</p><p class='links-row'><a href='https://chuynh18.github.io/snake/' target='_blank'><img src='assets/img/eye.svg' alt='Try it' class='icon-link'></a><a href='https://github.com/chuynh18/snake' target='_blank'><img src='assets/img/mark-github.svg' alt='See the code' class='icon-link'></a></p>"}
     ];
-    const mobileOrder = [0,1,4,5,2,3];
+    const mobileOrder = [0,1,4,5,2,3]; // mapping for the different order of tiles in the mobile layout
     const gridItems = document.getElementsByClassName("mouseover-box");
     const mobileItems = document.getElementsByClassName("mobile-box");
     let timer;
@@ -26,6 +26,10 @@ window.onload = function() {
         mobileItems[i].addEventListener("click", function() {
             openModal(tiles[mobileOrder[i]].half, tiles[mobileOrder[i]].desc);
         });
+
+        setTimeout(function() {
+            mobileItems[i].classList.add("fadeIn2");
+        }, 250*i+300);
     }
 
     // attach event handlers after ceremony has completed

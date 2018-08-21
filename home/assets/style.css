@@ -170,6 +170,7 @@ html {
 .mobile-box {
     height: 93%;
     position: relative;
+    opacity: 0;
 }
 
 .mobile-image {
@@ -275,6 +276,12 @@ p {
     animation-fill-mode: forwards;
 }
 
+.fadeIn2 {
+    animation-name: fade-in;
+    animation-duration: 750ms;
+    animation-fill-mode: forwards;
+}
+
 .fadeOut {
     animation-name: fade-out;
     animation-duration: 300ms;
@@ -340,7 +347,7 @@ p {
         font-size: 12pt;
         bottom: 12px
     }
-    
+
     #description-text {
         font-size: 10pt;
     }
