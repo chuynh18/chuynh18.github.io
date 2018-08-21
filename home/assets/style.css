@@ -334,7 +334,7 @@ p {
 
 @media only screen and (max-width: 800px) {
     .mobile-infotext {
-        font-size: 25pt;
+        font-size: 24pt;
         bottom: 22px;
     }
 }
@@ -367,7 +367,7 @@ p {
     }
 
     .mobile-infotext {
-        font-size: 15pt;
+        font-size: 16pt;
         bottom: 12px
     }
 
