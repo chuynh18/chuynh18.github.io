@@ -332,6 +332,10 @@ p {
 }
 
 @media only screen and (max-width: 600px) {
+    #my-name {
+        font-size: 24pt;
+    }
+
     .mobile-infotext {
         font-size: 18pt;
         bottom: 18px;
@@ -343,6 +347,10 @@ p {
 }
 
 @media only screen and (max-width: 480px) {
+    #my-name {
+        font-size: 18pt;
+    }
+
     .mobile-infotext {
         font-size: 12pt;
         bottom: 12px
