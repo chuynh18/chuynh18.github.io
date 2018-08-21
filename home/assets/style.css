@@ -179,7 +179,7 @@ html {
 }
 
 .mobile-infotext {
-    font-size: 24pt;
+    font-size: 32pt;
     width: 100%;
     background-color: rgba(54, 54, 54, 0.8);
     color: #eee;
@@ -332,6 +332,13 @@ p {
     }
 }
 
+@media only screen and (max-width: 800px) {
+    .mobile-infotext {
+        font-size: 25pt;
+        bottom: 22px;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     #my-name {
         font-size: 28pt;
@@ -339,7 +346,7 @@ p {
     }
 
     .mobile-infotext {
-        font-size: 18pt;
+        font-size: 20pt;
         bottom: 18px;
     }
 
@@ -360,8 +367,12 @@ p {
     }
 
     .mobile-infotext {
-        font-size: 12pt;
+        font-size: 16pt;
         bottom: 12px
+    }
+
+    #description-text {
+        font-size: 10pt;
     }
 
     .icon-link {
@@ -371,7 +382,8 @@ p {
 }
 
 @media only screen and (max-width: 400px) {
-    #description-text {
-        font-size: 10pt;
+    .mobile-infotext {
+        font-size: 14pt;
+        bottom: 12px
     }
 }
