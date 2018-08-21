@@ -364,12 +364,14 @@ p {
         bottom: 12px
     }
 
-    #description-text {
-        font-size: 10pt;
-    }
-
     .icon-link {
         height: 60px;
         width: 60px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #description-text {
+        font-size: 10pt;
     }
 }
