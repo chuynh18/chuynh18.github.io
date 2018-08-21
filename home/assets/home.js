@@ -3,6 +3,7 @@
 window.onload = function() {
     const tiles = ['yellowbird.jpg', 'geese.jpg', 'redbird.jpg', 'heron.jpg', 'hummingbird.jpg', 'flyheron.jpg'];
     const gridItems = document.getElementsByClassName("mouseover-box");
+    let timer;
 
     // welcome "ceremony"
     setTimeout(function() {
@@ -18,15 +19,19 @@ window.onload = function() {
                 openModal(tiles[i]);
             });
             gridItems[i].addEventListener("mouseenter", function(event){
-                setTimeout(function() {
+                timer = setTimeout(function() {
                     mouseover(tiles[i], false, 70);
                 }, 500);
                 toggleGlow(event, true);
             });
             gridItems[i].addEventListener("mouseleave", function(event){
+                clearTimeout(timer);
+
                 if (transitioning) {
-                    mouseover('tiled.jpg', true, 70);
-                } else {
+                    setTimeout(function() {
+                        mouseover('tiled.jpg', true, 70);
+                    }, 200)
+                } else if (transitionedToNonDefault) {
                     mouseover('tiled.jpg', true, 0);
                 }
                 
@@ -37,6 +42,7 @@ window.onload = function() {
 }
 
 let transitioning = false;
+let transitionedToNonDefault = false;
 
 const mouseover = function(image, showText, delay) {
     const existingImage = document.getElementsByClassName("image");
@@ -61,9 +67,18 @@ const mouseover = function(image, showText, delay) {
 
             if (i === existingImage.length - 1) {
                 transitioning = false;
+                if (image !== "tiled.jpg") {
+                    transitionedToNonDefault = true;
+                } else {
+                    transitionedToNonDefault = false;
+                }
             }
         }, delay*i);
     }
+}
+
+const timer = function() {
+
 }
 
 const toggleGlow = function(event, on) {
