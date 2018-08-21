@@ -1,10 +1,8 @@
 "use strict";
 
-
 window.onload = function() {
     const tiles = ['yellowbird.jpg', 'geese.jpg', 'redbird.jpg', 'heron.jpg', 'hummingbird.jpg', 'flyheron.jpg'];
     const gridItems = document.getElementsByClassName("mouseover-box");
-    const images = document.getElementsByClassName("image");
 
     // welcome "ceremony"
     setTimeout(function() {
@@ -20,35 +18,50 @@ window.onload = function() {
                 openModal(tiles[i]);
             });
             gridItems[i].addEventListener("mouseenter", function(event){
-                mouseover(tiles[i], false);
+                setTimeout(function() {
+                    mouseover(tiles[i], false, 70);
+                }, 500);
                 toggleGlow(event, true);
             });
             gridItems[i].addEventListener("mouseleave", function(event){
-                mouseover('tiled.jpg', true);
+                if (transitioning) {
+                    mouseover('tiled.jpg', true, 70);
+                } else {
+                    mouseover('tiled.jpg', true, 0);
+                }
+                
                 toggleGlow(event, false);
             });
         }
     }, 4250);
 }
 
-const mouseover = function(image, showText, delay) {
-    if (!delay) {
-        delay = 70;
-    }
+let transitioning = false;
 
+const mouseover = function(image, showText, delay) {
     const existingImage = document.getElementsByClassName("image");
     const infoText = document.getElementsByClassName("infotext");
-    
+    transitioning = true;
+
     for (let i = 0; i < existingImage.length; i++) {
+        existingImage[i].classList.remove("fadeIn");
+        void existingImage[i].offsetWidth;
         existingImage[i].alt = `assets/img/${image}`;
+
         setTimeout(function() {
             existingImage[i].src = `assets/img/${image}`;
+
             if (showText) {
                 infoText[i].style.display = "";
             } else {
                 infoText[i].style.display = "none";
             }
 
+            existingImage[i].classList.add("fadeIn");
+
+            if (i === existingImage.length - 1) {
+                transitioning = false;
+            }
         }, delay*i);
     }
 }

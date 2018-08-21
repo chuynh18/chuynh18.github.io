@@ -192,3 +192,13 @@
 a {
     cursor: pointer;
 }
+
+.fadeIn {
+    animation-name: fade-in;
+    animation-duration: 750ms;
+}
+
+@keyframes fade-in {
+    0% {opacity: 0.1}
+    100% {opacity: 1}
+}
