@@ -41,7 +41,7 @@ html {
     -ms-grid-template-rows: auto auto auto;
     background-clip: padding-box;
     animation-name: fade-in;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
 }
 
 .grid-item {
@@ -91,7 +91,7 @@ html {
     object-position: -710px -440px;
 }
 
-.gi0 {
+#gi0 {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -103,7 +103,7 @@ html {
     height: 200px;
     width: 518px;
 }
-.gi1 {
+#gi1 {
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 1;
@@ -115,7 +115,7 @@ html {
     height: 200px;
     width: 495px;
 }
-.gi2 {
+#gi2 {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
@@ -127,7 +127,7 @@ html {
     height: 420px;
     width: 347px;
 }
-.gi3 {
+#gi3 {
     grid-column-start: 2;
     grid-column-end: 5;
     -ms-grid-column-start: 2;
@@ -136,7 +136,7 @@ html {
     width: 666px;
 
 }
-.gi4 {
+#gi4 {
     grid-column-start: 2;
     grid-column-end: 4;
     -ms-grid-column-start: 2;
@@ -144,7 +144,7 @@ html {
     height: 200px;
     width: 323px;
 }
-.gi5 {
+#gi5 {
     height: 200px;
     width: 323px;
 }
@@ -158,6 +158,11 @@ html {
 
 .infotextActive {
     background-color: rgba(184, 113, 113, 0.7)
+}
+
+#mobile-container {
+    display: none;
+    text-align: center;
 }
 
 .modal {
@@ -267,4 +272,23 @@ p {
 @keyframes fade-out {
     0% {opacity: 1;}
     100% {opacity: 0;}
+}
+
+@media only screen and (max-width: 1024px) {
+    #mobile-container {
+        display: initial;
+        width: 100%;
+    }
+
+    .mobile-image {
+        width: 100%;
+    }
+
+    .mobile-infotext {
+        width: 100%;
+    }
+
+    #grid-container {
+        display: none;
+    }
 }

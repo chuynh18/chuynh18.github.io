@@ -19,7 +19,7 @@ window.onload = function() {
     anime.timeline()
         .add({
             targets: '#welcome0',
-            translateY: ["30%", "33%"],
+            translateY: ["29%", "32%"],
             opacity: [0,1,1,0],
             duration: 3000,
             easing: "linear",
@@ -33,14 +33,14 @@ window.onload = function() {
             offset: 650
         }) .add({
             targets: '#welcome2',
-            translateY: ["45%", "48%"],
+            translateY: ["46%", "49%"],
             opacity: [0,1,1,0],
             duration: 3000,
             easing: "linear",
             offset: 1300
         }) .add({
             targets: '#welcome3',
-            translateY: ["53%", "56%"],
+            translateY: ["55%", "58%"],
             opacity: [0,1,1,0],
             duration: 3000,
             easing: "linear",
