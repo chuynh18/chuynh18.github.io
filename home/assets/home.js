@@ -23,6 +23,7 @@ window.onload = function() {
     // attach event handlers after ceremony has completed
     setTimeout(function() {
         for (let i = 0; i < gridItems.length; i++) {
+            gridItems[i].classList.add("pointer");
             gridItems[i].addEventListener("click", function(){
                 openModal(tiles[i].half, tiles[i].desc);
             });

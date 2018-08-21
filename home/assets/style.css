@@ -227,7 +227,7 @@ html {
 }
 
 /* make cursor change to pointer to make it obvious this is a clickable element */
-a {
+.pointer {
     cursor: pointer;
 }
 
