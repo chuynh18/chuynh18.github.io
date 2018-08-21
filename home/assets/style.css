@@ -316,11 +316,11 @@ p {
     }
 
     .modal-content {
-        width: 95%;
+        width: 92%;
     }
 
     #modalImage {
-        width: 95%;
+        width: 80%;
     }
 }
 
@@ -329,11 +329,19 @@ p {
         font-size: 18pt;
         bottom: 18px;
     }
+
+    #description-text {
+        font-size: 11pt;
+    }
 }
 
 @media only screen and (max-width: 480px) {
     .mobile-infotext {
         font-size: 12pt;
         bottom: 12px
+    }
+    
+    #description-text {
+        font-size: 10pt;
     }
 }
