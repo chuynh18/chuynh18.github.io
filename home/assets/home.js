@@ -1,7 +1,15 @@
 "use strict";
 
 window.onload = function() {
-    const tiles = ['hummingbird.jpg', 'four.jpg', 'nys.jpg', 'tic.jpg', 'shiritori.jpg', 'snake.jpg'];
+    const tiles = [
+        {img: "hummingbird.jpg", half: "hummingbirdsmall.jpg", desc: "", demo: "", gh: "https://github.com/chuynh18/"},
+        {img: "four.jpg", half: "foursmall.jpg", desc: "", demo: "https://chuynh18.github.io/fourinarow/", gh: "https://github.com/chuynh18/fourinarow"},
+        {img: "nys.jpg", half: "nyssmall.jpg", desc: "", demo: "https://nyskyscraper.herokuapp.com/", gh: "https://github.com/chuynh18/mongoose-scraper"},
+        {img: "tic.jpg", half: "ticsmall.jpg", desc: "", demo: "https://chuynh18.github.io/tictactoe/", gh: "https://github.com/chuynh18/tictactoe"},
+        {img: "shiritori.jpg", half: "shiritorismall.jpg", desc: "", demo: "https://chuynh18.github.io/shiritori/", gh: "https://github.com/chuynh18/shiritori"},
+        {img: "snake.jpg", half: "snakesmall.jpg", desc: "", demo: "https://chuynh18.github.io/snake/", gh: "https://github.com/chuynh18/snake"}
+    ];
+
     const gridItems = document.getElementsByClassName("mouseover-box");
     let timer;
 
@@ -16,11 +24,11 @@ window.onload = function() {
     setTimeout(function() {
         for (let i = 0; i < gridItems.length; i++) {
             gridItems[i].addEventListener("click", function(){
-                openModal(tiles[i]);
+                openModal(tiles[i].half);
             });
             gridItems[i].addEventListener("mouseenter", function(event){
                 timer = setTimeout(function() {
-                    mouseover(tiles[i], false, 70, i);
+                    mouseover(tiles[i].img, false, 70, i);
                 }, 500);
                 toggleGlow(event, true);
             });
@@ -99,16 +107,16 @@ const openModal = function(image) {
     img.src = `assets/img/${image}`;
     img.alt = `assets/img/${image}`;
 
-    modal.style.display = "table";
+    document.getElementById("modal").style.display = "table";
 }
 
 document.getElementById("modalClose").onclick = function() {
-    modal.style.display = "none";
+    document.getElementById("modal").style.display = "none";
 }
 
 window.onclick = function(event) {
     if (event.target == document.getElementById('mid-modal')) {
-        modal.style.display = "none";
+        document.getElementById("modal").style.display = "none";
     }
 }
 

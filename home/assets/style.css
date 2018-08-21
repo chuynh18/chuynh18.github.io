@@ -170,7 +170,7 @@
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 1080px;
+    width: 800px;
 }
 
 .close {
@@ -195,6 +195,11 @@
 /* make cursor change to pointer to make it obvious this is a clickable element */
 a {
     cursor: pointer;
+}
+
+#description {
+    text-align: center;
+    background-color: #ddd;
 }
 
 .fadeIn {
