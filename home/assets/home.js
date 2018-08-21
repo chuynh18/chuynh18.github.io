@@ -28,7 +28,7 @@ window.onload = function() {
         });
 
         setTimeout(function() {
-            mobileItems[i].classList.add("fadeIn2");
+            mobileItems[i].classList.add("fadeIn2", "pointer");
         }, 250*i+300);
     }
 
