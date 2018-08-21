@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     border: 0;
+}
+
+html {
     background-color: #eee;
 }
 
@@ -146,14 +149,14 @@
 }
 
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    position: absolute; /* scrolls with page */
+    z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
     height: 100vh;
-    overflow: auto; /* Enable scroll if needed */
+    overflow: auto;
 }
 
 .mid-modal {
@@ -170,7 +173,21 @@
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 800px;
+    width: 900px;
+}
+
+.icon-link {
+    height: 100px;
+    width: 100px;
+    margin: 2% 7%;
+}
+
+.icon-link:hover {
+    filter: drop-shadow(0 0 10px rgb(194,98,98));
+}
+
+.links-row {
+    text-align: center;
 }
 
 .close {
@@ -200,6 +217,17 @@ a {
 #description {
     text-align: center;
     background-color: #ddd;
+}
+
+#description-text {
+    margin: auto;
+    background-color: #ddd;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    text-align: left;
+    margin: 3% 5% 0 5%;
 }
 
 .fadeIn {
