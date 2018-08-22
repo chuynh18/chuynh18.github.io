@@ -160,7 +160,9 @@ window.onclick = function(event) {
 }
 
 setTimeout(function() {
+    console.log("setTimeout ran");
     if (!document.getElementById("mob-img0").complete) {
         document.getElementById("mob-img0").classList.remove("hidden");
+        console.log("conditional worked");
     }
 }, 3000);
