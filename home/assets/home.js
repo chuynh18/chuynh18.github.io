@@ -63,6 +63,7 @@ window.onload = function() {
     }, 1350);
 
     document.getElementById("slowInternet").classList.add("hidden");
+    document.getElementById("slowInternet2").classList.add("hidden");
 }
 
 let transitioning = false;
@@ -163,7 +164,10 @@ setTimeout(function() {
     console.log("setTimeout ran");
     if (!document.getElementById("mob-img0").complete) {
         document.getElementById("slowInternet").classList.remove("hidden");
+        document.getElementById("slowInternet2").classList.remove("hidden");
         document.getElementById("slowInternet").classList.add("fadeIn");
+        document.getElementById("slowInternet2").classList.add("fadeIn");
+        
         console.log("conditional worked");
     }
 }, 3000);
