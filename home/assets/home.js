@@ -6,7 +6,7 @@ setTimeout(function() {
         document.getElementById("slowInternet").classList.remove("hidden");
         document.getElementById("slowInternet").classList.add("fadeIn");
     }
-}, 3000);
+}, 4000);
 
 setTimeout(function() {
     if (!document.getElementById("mob-img0").complete) {
@@ -164,17 +164,17 @@ const openModal = function(image, description) {
     document.getElementById("modal").style.display = "table";
 }
 
-    window.onclick = function(event) {
-        if (event.target == document.getElementById('mid-modal')) {
-            document.getElementById("actual-modal").classList.remove("fadeIn");
-            document.getElementById("mid-modal").classList.remove("fadeIn");
-            document.getElementById("actual-modal").classList.add("fadeOut");
-            document.getElementById("mid-modal").classList.add("fadeOut");
+window.onclick = function(event) {
+    if (event.target == document.getElementById('mid-modal')) {
+        document.getElementById("actual-modal").classList.remove("fadeIn");
+        document.getElementById("mid-modal").classList.remove("fadeIn");
+        document.getElementById("actual-modal").classList.add("fadeOut");
+        document.getElementById("mid-modal").classList.add("fadeOut");
 
-            setTimeout(function() {
-                document.getElementById("modal").style.display = "none";
-                document.getElementById("actual-modal").classList.remove("fadeOut");
-            document.getElementById("mid-modal").classList.remove("fadeOut");
-            }, 300);
-        }
+        setTimeout(function() {
+            document.getElementById("modal").style.display = "none";
+            document.getElementById("actual-modal").classList.remove("fadeOut");
+        document.getElementById("mid-modal").classList.remove("fadeOut");
+        }, 300);
     }
+}
