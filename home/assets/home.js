@@ -12,7 +12,7 @@ setTimeout(function() {
     if (!document.getElementById("mob-img0").complete) {
         document.getElementById("slowInternet").textContent = "Looks like we still haven't loaded.  Please hold on...";
     }
-}, 10000);
+}, 8000);
 
 setTimeout(function() {
     if (!document.getElementById("mob-img0").complete) {
