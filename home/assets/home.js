@@ -84,10 +84,13 @@ window.onload = function() {
     }, 1350);
 
     document.getElementById("modalClose").onclick = function() {
+        const img = document.getElementById("modalImage");
         document.getElementById("actual-modal").classList.remove("fadeIn");
         document.getElementById("mid-modal").classList.remove("fadeIn");
         document.getElementById("actual-modal").classList.add("fadeOut");
         document.getElementById("mid-modal").classList.add("fadeOut");
+        img.src = "";
+        img.alt = "";
 
         setTimeout(function() {
             document.getElementById("modal").style.display = "none";
@@ -166,11 +169,15 @@ const openModal = function(image, description) {
 }
 
 window.onclick = function(event) {
+    const img = document.getElementById("modalImage");
+    
     if (event.target == document.getElementById('mid-modal')) {
         document.getElementById("actual-modal").classList.remove("fadeIn");
         document.getElementById("mid-modal").classList.remove("fadeIn");
         document.getElementById("actual-modal").classList.add("fadeOut");
         document.getElementById("mid-modal").classList.add("fadeOut");
+        img.src = "";
+        img.alt = "";
 
         setTimeout(function() {
             document.getElementById("modal").style.display = "none";
