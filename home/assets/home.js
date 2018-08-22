@@ -167,7 +167,7 @@ setTimeout(function() {
         document.getElementById("slowInternet").classList.add("fadeIn");
         document.getElementById("slowInternet2").classList.add("fadeIn");
     }
-}, 5000);
+}, 3000);
 
 setTimeout(function() {
     if (!document.getElementById("mob-img0").complete) {
