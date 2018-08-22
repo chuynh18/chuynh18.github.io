@@ -2,7 +2,7 @@
 
 setTimeout(function() {
     console.log("timeout ran!");
-    if (!document.getElementById("mob-img0").complete) {
+    if (!document.getElementById("mob-img0").complete || !document.getElementById("otherMajorPreload").complete) {
         console.log("slow internet!");
         document.getElementById("slowInternet").classList.remove("hidden");
         document.getElementById("slowInternet").classList.add("fadeIn");
@@ -10,13 +10,13 @@ setTimeout(function() {
 }, 3000);
 
 setTimeout(function() {
-    if (!document.getElementById("mob-img0").complete) {
+    if (!document.getElementById("mob-img0").complete || !document.getElementById("otherMajorPreload").complete) {
         document.getElementById("slowInternet").textContent = "Looks like we still haven't loaded.  Please hold on...";
     }
 }, 8000);
 
 setTimeout(function() {
-    if (!document.getElementById("mob-img0").complete) {
+    if (!document.getElementById("mob-img0").complete || !document.getElementById("otherMajorPreload").complete) {
         document.getElementById("slowInternet").textContent = "I promise we're still trying to load the site, but something may be wrong with your internet connection.";
     }
 }, 15000);
