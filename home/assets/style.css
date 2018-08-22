@@ -150,6 +150,10 @@ html {
     width: 323px;
 }
 
+.hidden {
+    display: none;
+}
+
 .infotext {
     position: relative;
     bottom: 30pt;
