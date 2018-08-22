@@ -62,7 +62,7 @@ window.onload = function() {
         }
     }, 1350);
 
-    document.getElementById("mob-img0").classList.add("hidden");
+    document.getElementById("slowInternet").classList.add("hidden");
 }
 
 let transitioning = false;
@@ -162,7 +162,7 @@ window.onclick = function(event) {
 setTimeout(function() {
     console.log("setTimeout ran");
     if (!document.getElementById("mob-img0").complete) {
-        document.getElementById("mob-img0").classList.remove("hidden");
+        document.getElementById("slowInternet").classList.remove("hidden");
         console.log("conditional worked");
     }
 }, 3000);
