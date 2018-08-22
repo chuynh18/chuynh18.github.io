@@ -165,20 +165,20 @@ if (!document.getElementById("mob-img0").complete) {
         document.getElementById("slowInternet2").classList.remove("hidden");
         document.getElementById("slowInternet").classList.add("fadeIn");
         document.getElementById("slowInternet2").classList.add("fadeIn");
-    }, 3500);
+    }, 5000);
 
     setTimeout(function() {
         if (!document.getElementById("mob-img0").complete) {
             document.getElementById("slowInternet").textContent = "Looks like we still haven't loaded.  Please hold on...";
             document.getElementById("slowInternet2").textContent = "Looks like we still haven't loaded.  Please hold on...";
         }
-    }, 6500);
+    }, 10000);
 
     setTimeout(function() {
         if (!document.getElementById("mob-img0").complete) {
             document.getElementById("slowInternet").textContent = "I promise we're still trying to load the site, but something may be wrong with your internet connection.";
             document.getElementById("slowInternet2").textContent = "I promise we're still trying to load the site, but something may be wrong with your internet connection.";
         }
-    }, 10000);
+    }, 15000);
 }
 
