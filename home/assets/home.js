@@ -163,6 +163,7 @@ setTimeout(function() {
     console.log("setTimeout ran");
     if (!document.getElementById("mob-img0").complete) {
         document.getElementById("slowInternet").classList.remove("hidden");
+        document.getElementById("slowInternet").classList.add("fadeIn");
         console.log("conditional worked");
     }
 }, 3000);
