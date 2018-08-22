@@ -161,13 +161,10 @@ window.onclick = function(event) {
 }
 
 setTimeout(function() {
-    console.log("setTimeout ran");
     if (!document.getElementById("mob-img0").complete) {
         document.getElementById("slowInternet").classList.remove("hidden");
         document.getElementById("slowInternet2").classList.remove("hidden");
         document.getElementById("slowInternet").classList.add("fadeIn");
         document.getElementById("slowInternet2").classList.add("fadeIn");
-        
-        console.log("conditional worked");
     }
-}, 3000);
+}, 3500);
