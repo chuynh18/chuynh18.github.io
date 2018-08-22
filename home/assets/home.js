@@ -6,7 +6,7 @@ setTimeout(function() {
         document.getElementById("slowInternet").classList.remove("hidden");
         document.getElementById("slowInternet").classList.add("fadeIn");
     }
-}, 4000);
+}, 3000);
 
 setTimeout(function() {
     if (!document.getElementById("mob-img0").complete) {
