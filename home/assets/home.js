@@ -2,6 +2,7 @@
 
 setTimeout(function() {
     if (!document.getElementById("mob-img0").complete) {
+        console.log("slow internet!");
         document.getElementById("slowInternet").classList.remove("hidden");
         document.getElementById("slowInternet").classList.add("fadeIn");
     }
