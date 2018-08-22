@@ -217,17 +217,37 @@ html {
 }
 
 .icon-link {
+    display: inline-block;
     height: 100px;
     width: 100px;
     margin: 2% 7%;
 }
 
-.icon-link:hover {
+.link-item:hover {
     filter: drop-shadow(0 0 10px rgb(194,98,98));
 }
 
 .links-row {
+    display: inline;
     text-align: center;
+}
+
+.link-item {
+    display: inline;
+}
+
+.link-item a {
+    position: relative;
+}
+
+.link-item .icon-text {
+    color: #111;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .close {
