@@ -159,26 +159,26 @@ window.onclick = function(event) {
         }, 300);
     }
 }
-if (!document.getElementById("mob-img0").complete) {
-    setTimeout(function() {
+
+setTimeout(function() {
+    if (!document.getElementById("mob-img0").complete) {
         document.getElementById("slowInternet").classList.remove("hidden");
         document.getElementById("slowInternet2").classList.remove("hidden");
         document.getElementById("slowInternet").classList.add("fadeIn");
         document.getElementById("slowInternet2").classList.add("fadeIn");
-    }, 5000);
+    }
+}, 5000);
 
-    setTimeout(function() {
-        if (!document.getElementById("mob-img0").complete) {
-            document.getElementById("slowInternet").textContent = "Looks like we still haven't loaded.  Please hold on...";
-            document.getElementById("slowInternet2").textContent = "Looks like we still haven't loaded.  Please hold on...";
-        }
-    }, 10000);
+setTimeout(function() {
+    if (!document.getElementById("mob-img0").complete) {
+        document.getElementById("slowInternet").textContent = "Looks like we still haven't loaded.  Please hold on...";
+        document.getElementById("slowInternet2").textContent = "Looks like we still haven't loaded.  Please hold on...";
+    }
+}, 10000);
 
-    setTimeout(function() {
-        if (!document.getElementById("mob-img0").complete) {
-            document.getElementById("slowInternet").textContent = "I promise we're still trying to load the site, but something may be wrong with your internet connection.";
-            document.getElementById("slowInternet2").textContent = "I promise we're still trying to load the site, but something may be wrong with your internet connection.";
-        }
-    }, 15000);
-}
-
+setTimeout(function() {
+    if (!document.getElementById("mob-img0").complete) {
+        document.getElementById("slowInternet").textContent = "I promise we're still trying to load the site, but something may be wrong with your internet connection.";
+        document.getElementById("slowInternet2").textContent = "I promise we're still trying to load the site, but something may be wrong with your internet connection.";
+    }
+}, 15000);
