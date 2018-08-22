@@ -1,6 +1,7 @@
 "use strict";
 
 setTimeout(function() {
+    console.log("timeout ran!");
     if (!document.getElementById("mob-img0").complete) {
         console.log("slow internet!");
         document.getElementById("slowInternet").classList.remove("hidden");
