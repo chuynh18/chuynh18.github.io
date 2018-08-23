@@ -155,6 +155,7 @@ html {
 }
 
 .infotext {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     position: relative;
     bottom: 30pt;
     padding: 0 10px;
@@ -183,6 +184,7 @@ html {
 }
 
 .mobile-infotext {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 32pt;
     width: 100%;
     background-color: rgba(54, 54, 54, 0.8);
