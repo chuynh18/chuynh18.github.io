@@ -89,11 +89,11 @@ window.onload = function() {
         document.getElementById("mid-modal").classList.remove("fadeIn");
         document.getElementById("actual-modal").classList.add("fadeOut");
         document.getElementById("mid-modal").classList.add("fadeOut");
-        img.src = "";
-        img.alt = "";
 
         setTimeout(function() {
             document.getElementById("modal").style.display = "none";
+            img.src = "";
+            img.alt = "";
             document.getElementById("actual-modal").classList.remove("fadeOut");
             document.getElementById("mid-modal").classList.remove("fadeOut");
         }, 300);
@@ -176,13 +176,13 @@ window.onclick = function(event) {
         document.getElementById("mid-modal").classList.remove("fadeIn");
         document.getElementById("actual-modal").classList.add("fadeOut");
         document.getElementById("mid-modal").classList.add("fadeOut");
-        img.src = "";
-        img.alt = "";
 
         setTimeout(function() {
             document.getElementById("modal").style.display = "none";
             document.getElementById("actual-modal").classList.remove("fadeOut");
-        document.getElementById("mid-modal").classList.remove("fadeOut");
+            document.getElementById("mid-modal").classList.remove("fadeOut");
+            img.src = "";
+            img.alt = "";
         }, 300);
     }
 }
